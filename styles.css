@@ -6,9 +6,15 @@
   box-sizing: border-box;
 }
 
-body {
+:root {
+  --basic-font-weight: 400;
+  --mid-font-weight: 500;
+  --heading-font-weight: 700;
+}
+
+ body {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: var(--basic-font-weight);
   font-size: 13px;
 }
 
@@ -19,13 +25,15 @@ body {
 nav {
   padding: 0 20px;
   text-transform: capitalize;
-  font-size: 500;
+  line-height: 20px;
 }
 
 #top-nav-bar {
   justify-content: space-between;
   align-items: center;
   height: 32px;
+  line-height: 32px;
+  background-color: black;
 }
 
 #top-nav-bar ul {
@@ -35,4 +43,16 @@ nav {
 
 #top-nav-bar li {
   margin-left: 10px;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+#top-nav-bar a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+#top-nav-bar a:hover {
+  color: #fff;
 }

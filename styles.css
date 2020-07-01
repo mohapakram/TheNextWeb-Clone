@@ -12,7 +12,7 @@
   --heading-font-weight: 700;
 }
 
- body {
+body {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-weight: var(--basic-font-weight);
   font-size: 13px;
@@ -55,4 +55,10 @@ ul a {
 
 #top-nav-bar a:hover {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }

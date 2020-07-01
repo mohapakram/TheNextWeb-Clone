@@ -6,13 +6,18 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+}
+
 .flex-container {
   display: flex;
 }
 
-.nav-item-container {
-  margin: 0 10px;
+nav {
+  padding: 0 25px;
 }
 
-#top-bar {
+#top-nav-bar {
+  justify-content: space-between;
 }

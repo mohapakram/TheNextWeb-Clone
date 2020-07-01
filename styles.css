@@ -7,7 +7,9 @@
 }
 
 body {
-  font-size: 16px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .flex-container {
@@ -15,9 +17,22 @@ body {
 }
 
 nav {
-  padding: 0 25px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-size: 500;
 }
 
 #top-nav-bar {
   justify-content: space-between;
+  align-items: center;
+  height: 32px;
+}
+
+#top-nav-bar ul {
+  list-style-type: none;
+  justify-content: center;
+}
+
+#top-nav-bar li {
+  margin-left: 10px;
 }

@@ -558,6 +558,15 @@ main {
   .discount-overlay {
     display: none;
   }
+
+  #funds-heading {
+    flex-direction: column;
+  }
+
+  #fund-rounds {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {

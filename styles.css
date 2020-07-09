@@ -44,6 +44,10 @@ nav {
   height: 32px;
   line-height: 32px;
   background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
 }
 
 #top-nav-bar ul {
@@ -74,6 +78,10 @@ a {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
   font-size: 1.3em;
   font-family: "Ropa Sans", sans-serif;
+  top: 32px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 #nav-logo {
@@ -121,7 +129,7 @@ a {
 }
 
 #featured-blocks {
-  margin: 5px 5px 0 0;
+  margin: 90px 5px 0 0;
   grid-template-columns: 2fr 1fr;
   height: 60vh;
 }
@@ -525,6 +533,10 @@ main {
     padding: 0;
   }
 
+  #main-nav {
+    top: 0;
+  }
+
   #featured-blocks {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -539,6 +551,7 @@ main {
 
   .latest-news {
     grid-template-columns: 1fr;
+    padding: 0 15px;
   }
 
   .article-item {
@@ -566,6 +579,19 @@ main {
   #fund-rounds {
     grid-template-columns: 1fr;
     padding: 0 15px;
+  }
+
+  .most-popular-articles {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+
+  .heading-padding {
+    padding: 0 15px;
+  }
+
+  #featured-blocks {
+    margin-top: 60px;
   }
 }
 

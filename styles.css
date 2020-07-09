@@ -164,7 +164,7 @@ footer .navigation li {
   text-align: center;
   font-size: 1.3em;
   padding: 10px;
-  border: 1px soldi #333;
+  border: 1px solid #333;
 }
 
 .text-overlay .author a,
@@ -313,7 +313,7 @@ footer .navigation li a:hover {
   position: relative;
 }
 
-.bg-img-1 {
+.bg-img-1 {x  
   background:
     linear-gradient(
       318deg,

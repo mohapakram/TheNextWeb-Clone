@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-
+<!-- 
+    _______ _            __  __           _    _____      _            _   _     _   
+ |__   __| |          |  \/  |         | |  / ____|    |_|          | | |_|   | |  
+    | |  | |__   ___  | \  / | __ _  __| | | |___   ___ _  ___ _ __ | |_ _ ___| |_ 
+    | |  | '_ \ / _ \ | |\/| |/ _` |/ _` |  \___ \ / __| |/ _ \ '_ \| __| / __| __|
+    | |  | | | |  __/ | |  | | |_| | |_| |  ____| | |__| |  __/ | | | |_| \__ \ |_ 
+    |_|  |_| |_|\___| |_|  |_|\__,_|\__,_| |_____/ \___|_|\___|_| |_|\__|_|___/\__|
+    ------------------
+  Coded By: Mohab Akram
+    ------------------
+  github: @mohapakram
+ -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>The Next Web</title>
@@ -27,7 +44,13 @@
         </ul>
       </nav>
       <nav id="main-nav" class="flex-container">
-        <ul>
+          <a href="#" class="show-on-mobile">
+             <div id="nav-logo">
+              <img alt="The Next Web Logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" />
+            </div>
+          </a>
+
+        <ul class="flex-container hide-on-mobile">
           <li><a href="#">latest</a></li>
           <li><a href="#">hard fork</a></li>
           <li><a href="#">plugged</a></li>
@@ -35,7 +58,698 @@
           <li><a href="#">growth quarters</a></li>
           <li><a href="#">neural</a></li>
         </ul>
+
+        <div id="header-icons" class="flex-container">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bars show-on-mobile"></i>
+        </div>
       </nav>
+
+      <div id="featured-blocks" class="grid-container">
+        <div id="main-block" class="block bg-img-1">
+        <img id="cover-logo" class="hide-on-mobile" alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+            <div class="date">
+              <span>Monday — July 6, 2020</span>
+            </div>
+            <div class="heading">
+              <h1>
+                New AI project captures Jane Austen’s thoughts on social media
+              </h1>
+              <span class="author">by <a href="#">Thomas Macaulay</a></span>
+              <span class="time">
+                <i class="far fa-clock"></i>
+                37 minutes ago</a></span>
+              <span class="shares">
+                <i class="fas fa-share-alt"></i>
+                2</a></span>
+            </div>
+        </div>
+        <div id="nested-featured-blocks">
+          <div class="block bg-img-2">
+            <div class="heading">
+              <h1>
+               A comprehensive guide on how to detect faces with Python
+              </h1>
+              <span class="author">by <a href="#">Live Code Stream</a></span>
+              <span class="time">
+                <i class="far fa-clock"></i>
+                1 hour ago</a></span>
+              <span class="shares">
+                                <i class="fas fa-share-alt"></i>
+                0</a></span>
+                
+            </div>
+            </div>
+          <div class="block bg-img-3">
+            <div class="heading">
+              <h1>
+              Everything we know about the OnePlus Nord
+              </h1>
+              <span class="author">by <a href="#">Ivan Mehta</a></span>
+              <span class="time">
+                <i class="far fa-clock"></i>
+                1 hour ago</a></span>
+              <span class="shares">
+                                <i class="fas fa-share-alt"></i>
+
+                1</a></span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
+    <main>
+      <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+      <div class="latest-news grid-container article-container">
+       
+        <article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-95-516x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+         <div>
+            <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Thomas Macaulay</a></span>
+              <span>.</span>
+            
+              <span class="time">3 hours ago</span>
+            </div>
+         </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-apples-privacy-516x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+         <div>
+          <div>  
+          <h3> <a href="#">How the world is feeling right now, according to data</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Andrea Hak</a></span>
+              <span>.</span>
+            
+              <span class="time">3 hours ago</span>
+            </di
+            </div>v>
+         </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/TNW-Dropshipping-540x270.jpeg"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">If a 15-year-old can make $1 million as a dropshipper, this training can help you do the same</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">TNW Deals</a></span>
+                        <span>.</span>
+
+            <span class="time">3 hours ago</span>
+          </div>
+          </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/uber-thames-london-boat-taxis-cars-future-river-first-clippers-480x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">Uber to launch London boat taxis — but its operating license debacle remains unresolved</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">Thomas Macaulay</a></span>
+                        <span>.</span>
+
+            <span class="time">3 hours ago</span>
+          </div>
+          </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-1-1-516x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">A neurologist explains how coronavirus impacts the brain</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">The Conversation</a></span>
+                        <span>.</span>
+
+            <span class="time">3 hours ago</span>
+          </div>
+          </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-3-1-516x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">Drones and aerial vehicles are set to change our cities, but how?</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">The Conversation</a></span>
+                        <span>.</span>
+
+            <span class="time">4 hours ago</span>
+          </div>
+          </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/people-crowd-405x270.jpg"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">Google is experimenting with showing traffic lights in Maps</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">Mix</a></span>
+                        <span>.</span>
+
+            <span class="time">4 hours ago</span>
+          </div>
+          </div>
+        </article><article class="article-item flex-container">
+          <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-...-2-516x270.png"
+            alt="New AI project captures Jane Austen's thoughts on social media" />
+          <div>
+            <h3> <a href="#">These 2 books will strengthen your command of Python machine learning</a></h3>
+          <div class="article-meta">
+            <span class="author"><a href="#">Ben Dickson</a></span>
+                        <span>.</span>
+
+            <span class="time">5 hours ago</span>
+          </div>
+          </div>
+        </article>
+        
+      </div>
+
+    <div class="spacing"></div>
+    <div id="funds-heading" class="flex-container">
+      <h1 class="orange-heading"><a href="#">Latest funding rounds on Index.co</a> <i class="fas fa-chevron-right"></i></h1>
+      <div id="funds-links">
+        <a href="#">Add info |</a>
+        <a href="#">Get updates by email |</a>
+        <a href="#">See more</a>
+      </div>
+    </div>
+    <div id="fund-rounds" class="grid-container">
+      <div class="fund-item">
+        <img
+          src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
+          alt="Company-logo" />
+        <div class="fund-heading">
+          <h3>
+            Truepill
+          </h3>
+        </div>
+        <div class="fund-amount">
+          <h4>$25M</h4>
+          <span>SERIES B</span>
+        </div>
+        <div class="fund-list">
+          <ul>
+            <li> <i class="fas fa-ticket-alt"></i><a href="#">Health Care</a></li>
+          </ul>
+
+        </div>
+        <div class="fund-link">
+          <a href="#">
+            Online pharmacy Truepill raises $25 million to expand into telehealth <span>
+              on VentureBeat
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="fund-item">
+        <img
+          src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1089152838117269504%2FTy5aIZWf.jpg&signature=1a7044a032d4b8ce3a5c351e02e6bf06"
+          alt="Company-logo" />
+        <div class="fund-heading">
+          <h3>
+            RacketPal
+          </h3>
+        </div>
+        <div class="fund-amount">
+          <h4>$150k</h4>
+          <span>PRE-SEED</span>
+        </div>
+        <div class="fund-list">
+            <ul>
+              <li> <i class="fas fa-ticket-alt"></i><a href="#">Apps</a></li>
+              <li> <i class="fas fa-ticket-alt"></i><a href="#">David Kasper</a></li>
+            </ul>
+        </div>
+       
+        <div class="fund-link">
+          <a href="#">
+          RacketPal raises £150k in pre-seed round <span>on UKTN (UK Tech News)</span>
+          </a>
+        </div>
+      </div>
+      <div class="fund-item">
+        <img
+          src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1121084827124604934%2Fofvh_jPj.jpg&signature=b3309d8398ce6bdaa37d3007e4cd6a96"
+          alt="Company-logo" />
+        <div class="fund-heading">
+          <h3>
+            Caffeine
+          </h3>
+        </div>
+        <div class="fund-amount">
+          <h4>$113M</h4>
+          <span>SERES D</span>
+        </div>
+        <div class="fund-list">
+          <ul>
+            <li> <i class="fas fa-ticket-alt"></i><a href="#">Entertainment, +3</a></li>
+            <li> <i class="fas fa-ticket-alt"></i><a href="#">Andreessen Horowitz, +4</a></li>
+          </ul>
+        </div>
+      
+        <div class="fund-link">
+          <a href="#">
+          Gaming And Sports Content Streaming Company Caffeine Secures $113 Million <span>on Pulse 2.0</span>
+          </a>
+        </div>
+      </div><div class="fund-item">
+        <img
+          src="https://img-cdn.tnwcdn.com/image?url=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F1280551752593338368%2FAf17dIYK.jpg&signature=d7c37d4f7cda5a5296512fa28f5d94f7"
+          alt="Company-logo" />
+        <div class="fund-heading">
+          <h3>
+            RacketPal
+          </h3>
+        </div>
+        <div class="fund-amount">
+          <h4>$150k</h4>
+          <span>PRE-SEED</span>
+        </div>
+        <div class="fund-list">
+          <ul>
+            <li> <i class="fas fa-ticket-alt"></i><a href="#">Apps</a></li>
+            <li> <i class="fas fa-ticket-alt"></i><a href="#">David Kasper</a></li>
+          </ul>
+        </div>
+      
+        <div class="fund-link">
+          <a href="#">
+            RacketPal raises £150k in pre-seed round <span>on UKTN (UK Tech News)</span>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="spacing"></div>
+
+    <div class="most-popular-articles article-container grid-container">
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div><div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div><div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="spacing"></div>
+    
+    <div class="most-popular-articles article-container grid-container">
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="spacing"></div>
+    
+    <div class="most-popular-articles article-container grid-container">
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="most-popular-item">
+        <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+        <div class="most-popular-item-contnet">
+          <div class="popular-img-heading flex-container">
+            <div class="text-overlay">
+              <h4>most popular</h4>
+              <h1><a href="#"> Satoshi Nakaboto: ‘Leaked data shows how the FBI uncovers Bitcoin laundering’</a> </h1>
+              <span class="author"> <a href="#">Satoshi Nakaboto</a> </span>
+              <span>.</span>
+              <span class="time">7 hours ago</span>
+            </div>
+          </div>
+          <div class="latest">
+            <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/testo.jpg" alt="latest" />
+            <span>latest</span>
+            <h5>
+              Digital media giant J2 Global 'targeted' by notorious New York short sellers
+            </h5>
+          </div>
+          <ul>
+            <li><a href="#">Satoshi Nakaboto: ‘New app lets you send and receive Bitcoin directly from and to your bank
+                account’</a></li>
+            <li><a href="#">Uber buys Postmates for $2.65 billion — and traders are into it</a></li>
+            <li><a href="#">Watch Tesla’s meteoric rise — set to techno-remixed Elon Musk tweets</a></li>
+            <li><a href="#">The UK just paid $500M to battle Musk in the internet-from-space race — cos Brexit</a></li>
+            <li><a href="#">Tesla short sellers lost $1.33B on Thursday's stock pump — Musk only got richer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="spacing"></div>
+
+    <h1 class="orange-heading"><a href="#">Latest news</a> <i class="fas fa-chevron-right"></i></h1>
+    <div class="latest-news grid-container article-container">
+    
+          <article class="article-item flex-container">
+            <div class="discount-overlay">
+              <div><span>100% OFF</span></div>
+            </div>
+            <img
+              src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+              alt="New AI project captures Jane Austen's thoughts on social media" />
+            <div>
+              <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Thomas Macaulay</a></span>
+              <span>.</span>
+          
+              <span class="time">3 hours ago</span>
+            </div>
+          </div>
+          </article><article class="article-item flex-container">
+            <div class="discount-overlay">
+              <div><span>100% OFF</span></div>
+            </div>
+            <img
+              src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+              alt="New AI project captures Jane Austen's thoughts on social media" />
+            <div>
+              <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Thomas Macaulay</a></span>
+              <span>.</span>
+          
+              <span class="time">3 hours ago</span>
+            </div>
+          </div>
+          </article><article class="article-item flex-container">
+            <div class="discount-overlay">
+              <div><span>100% OFF</span></div>
+            </div>
+            <img
+              src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+              alt="New AI project captures Jane Austen's thoughts on social media" />
+            <div>
+              <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Thomas Macaulay</a></span>
+              <span>.</span>
+          
+              <span class="time">3 hours ago</span>
+            </div>
+          </div>
+          </article><article class="article-item flex-container">
+            <div class="discount-overlay">
+              <div><span>100% OFF</span></div>
+            </div>
+            <img
+              src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+              alt="New AI project captures Jane Austen's thoughts on social media" />
+            <div>
+              <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+            <div class="article-meta">
+              <span class="author"><a href="#">Thomas Macaulay</a></span>
+              <span>.</span>
+          
+              <span class="time">3 hours ago</span>
+            </div>
+          </div>
+          </article>
+              <article class="article-item flex-container">
+                <div class="discount-overlay">
+                  <div><span>100% OFF</span></div>
+                </div>
+                <img
+                  src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+                  alt="New AI project captures Jane Austen's thoughts on social media" />
+                <div>
+                  <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+                <div class="article-meta">
+                  <span class="author"><a href="#">Thomas Macaulay</a></span>
+                  <span>.</span>
+              
+                  <span class="time">3 hours ago</span>
+                </div>
+              </div>
+              </article><article class="article-item flex-container">
+                <div class="discount-overlay">
+                  <div><span>100% OFF</span></div>
+                </div>
+                <img
+                  src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+                  alt="New AI project captures Jane Austen's thoughts on social media" />
+                <div>
+                  <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+                <div class="article-meta">
+                  <span class="author"><a href="#">Thomas Macaulay</a></span>
+                  <span>.</span>
+              
+                  <span class="time">3 hours ago</span>
+                </div>
+              </div>
+              </article><article class="article-item flex-container">
+                <div class="discount-overlay">
+                  <div><span>100% OFF</span></div>
+                </div>
+                <img
+                  src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+                  alt="New AI project captures Jane Austen's thoughts on social media" />
+                <div>
+                  <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+                <div class="article-meta">
+                  <span class="author"><a href="#">Thomas Macaulay</a></span>
+                  <span>.</span>
+              
+                  <span class="time">3 hours ago</span>
+                </div>
+              </div>
+              </article><article class="article-item flex-container">
+                <div class="discount-overlay">
+                  <div><span>100% OFF</span></div>
+                </div>
+                <img
+                  src="https://cdnp0.stackassets.com/f4ba7fa188eef66836fc16f74325b66a9246a703/store/6c45f8ddec0c015ca3762104531f411c9b267c25a00b8811623335fc75f6/sale_25313_primary_image.jpg"
+                  alt="New AI project captures Jane Austen's thoughts on social media" />
+                <div>
+                  <h3> <a href="#">New AI project captures Jane Austen's thoughts on social media</a></h3>
+                <div class="article-meta">
+                  <span class="author"><a href="#">Thomas Macaulay</a></span>
+                  <span>.</span>
+              
+                  <span class="time">3 hours ago</span>
+                </div>
+              </div>
+              </article>
+    
+    </div>
+    </main>
   </body>
 </html>

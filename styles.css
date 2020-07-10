@@ -20,12 +20,6 @@ body {
   font-size: 13px;
 }
 
-.gray , 
-#main-nav a,
-#header-icons i {
-  color: #aaa;
-}
-
 .nav-container {
   position: fixed;
   width: 100%;
@@ -77,7 +71,6 @@ nav {
   color: #f42;
 }
 
-
 .popular-img-heading a {
   color: white;
 }
@@ -85,7 +78,6 @@ nav {
 .most-popular-articles ul li a {
   color: #555;
 }
-
 
 .most-popular-item-contnet {
   margin-top: 10px;
@@ -208,8 +200,6 @@ footer .navigation li a:hover {
   color: white;
 }
 
-
-
 #top-nav-bar a {
   color: hsla(0, 0%, 100%, 0.6);
 }
@@ -217,6 +207,12 @@ footer .navigation li a:hover {
 #funds-links a {
   color: #f42;
   font-size: 1.2em;
+}
+
+.gray,
+#main-nav a,
+#header-icons i {
+  color: #aaa;
 }
 
 #top-nav-bar a:hover {
@@ -369,7 +365,7 @@ footer .navigation li a:hover {
 
 .heading h1 {
   font-size: 56px;
-   line-height: 56px;
+  line-height: 56px;
   color: white;
   margin: 30px 0;
   font-weight: 700;
@@ -487,7 +483,6 @@ main {
   font-weight: lighter;
   background-color: #fffaf8;
 }
-
 
 .most-popular-articles {
   grid-template-columns: repeat(3, 1fr);
@@ -610,16 +605,15 @@ footer .copy-rights p {
     font-size: 12px;
   }
 
-  #nested-featured-blocks h1 {
-    font-size: 22px;
-    line-height: 29px;
-  }
-
   .heading h1 {
     font-size: 45px;
     line-height: 50px;
   }
 
+  #nested-featured-blocks h1 {
+    font-size: 22px;
+    line-height: 29px;
+  }
 
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
@@ -669,6 +663,11 @@ footer .copy-rights p {
     margin-top: 60px;
   }
 
+  .heading h1 {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
   #featured-blocks h1 {
     /* font-size: 20px !important;
     line-height: 31px !important; */
@@ -709,12 +708,6 @@ footer .copy-rights p {
     grid-template-columns: 1fr;
   }
 
-  .heading h1 {
-   font-size: 20px;
-   line-height: 31px;
-  }
-
-
   #nav-logo img {
     margin: 10px;
     height: auto;
@@ -727,4 +720,3 @@ footer .copy-rights p {
     display: none;
   }
 }
-

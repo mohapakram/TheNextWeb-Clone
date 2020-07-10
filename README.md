@@ -6,7 +6,7 @@
 
 ## Live version
 
-[Live Demo here](https://rawcdn.githack.com/mohapakram/TheNextWeb-Clone/d8486ec83f76c80afccfb67bea168522d6bfae77/index.html)
+[Live Demo here](https://rawcdn.githack.com/mohapakram/TheNextWeb-Clone/79c91e6bcd58469f67fd16f2e1fad79f9678c6d1/index.html)
 
 ## Built With
 

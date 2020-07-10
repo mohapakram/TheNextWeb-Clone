@@ -688,8 +688,6 @@ footer .copy-rights p {
 
   .latest-news {
     grid-template-columns: 1fr;
-
-    /* padding: 0 15px; */
   }
 
   .article-item {

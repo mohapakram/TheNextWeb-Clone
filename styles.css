@@ -20,9 +20,11 @@ body {
   font-size: 13px;
 }
 
-/* header{
-
-} */
+.gray , 
+#main-nav a,
+#header-icons i {
+  color: #aaa;
+}
 
 .nav-container {
   position: fixed;
@@ -75,9 +77,6 @@ nav {
   color: #f42;
 }
 
-.article-meta a {
-  color: #aaa;
-}
 
 .popular-img-heading a {
   color: white;
@@ -87,9 +86,6 @@ nav {
   color: #555;
 }
 
-footer .navigation li a {
-  color: #aaa;
-}
 
 .most-popular-item-contnet {
   margin-top: 10px;
@@ -151,7 +147,6 @@ footer .navigation li a {
 }
 
 .article-meta {
-  color: #aaa;
   margin: 10px 0;
 }
 
@@ -213,10 +208,7 @@ footer .navigation li a:hover {
   color: white;
 }
 
-#main-nav a,
-#header-icons i {
-  color: #aaa;
-}
+
 
 #top-nav-bar a {
   color: hsla(0, 0%, 100%, 0.6);
@@ -377,8 +369,8 @@ footer .navigation li a:hover {
 
 .heading h1 {
   font-size: 56px;
+   line-height: 56px;
   color: white;
-  line-height: 56px;
   margin: 30px 0;
   font-weight: 700;
 }
@@ -496,9 +488,6 @@ main {
   background-color: #fffaf8;
 }
 
-#fund-rounds .fund-link span {
-  color: #aaa;
-}
 
 .most-popular-articles {
   grid-template-columns: repeat(3, 1fr);
@@ -598,7 +587,6 @@ footer .navigation {
 footer .copy-rights {
   background-color: black;
   padding: 30px;
-  color: #aaa;
   text-align: center;
 }
 
@@ -627,10 +615,11 @@ footer .copy-rights p {
     line-height: 29px;
   }
 
-  #featured-blocks #main-block h1 {
+  .heading h1 {
     font-size: 45px;
     line-height: 50px;
   }
+
 
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
@@ -655,7 +644,7 @@ footer .copy-rights p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .hide-on-mobile {
     display: none;
   }
@@ -681,8 +670,8 @@ footer .copy-rights p {
   }
 
   #featured-blocks h1 {
-    font-size: 20px !important;
-    line-height: 31px !important;
+    /* font-size: 20px !important;
+    line-height: 31px !important; */
     margin: 10px 0;
   }
 
@@ -720,9 +709,11 @@ footer .copy-rights p {
     grid-template-columns: 1fr;
   }
 
-  /* .heading-padding {
-    padding: 0 15px;
-  } */
+  .heading h1 {
+   font-size: 20px;
+   line-height: 31px;
+  }
+
 
   #nav-logo img {
     margin: 10px;
@@ -736,3 +727,4 @@ footer .copy-rights p {
     display: none;
   }
 }
+

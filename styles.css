@@ -1,0 +1,722 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --basic-font-weight: 400;
+  --mid-font-weight: 500;
+  --heading-font-weight: 700;
+}
+
+body {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: var(--basic-font-weight);
+  font-size: 13px;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.inner-nav-container {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 0 20px;
+  text-transform: capitalize;
+  line-height: 20px;
+}
+
+.orange-heading {
+  color: #f42;
+  display: flex;
+  align-items: center;
+}
+
+.author a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.article-item a {
+  color: black;
+}
+
+.orange-heading a {
+  color: #f42;
+}
+
+.popular-img-heading a {
+  color: white;
+}
+
+.most-popular-articles ul li a {
+  color: #555;
+}
+
+.most-popular-item-contnet {
+  margin-top: 10px;
+}
+
+.popular-img-heading a:hover {
+  text-decoration: underline;
+}
+
+.popular-img-heading h1 {
+  font-size: 1.5em;
+}
+
+.popular-img-heading h4 {
+  font-size: 1.2em;
+  font-weight: lighter;
+  text-transform: capitalize;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.article-meta a:hover {
+  color: #555;
+}
+
+.orange-heading i {
+  font-size: 18px;
+  margin: 0 5px;
+}
+
+.orange-heading:hover,
+.orange-heading a:hover {
+  color: black;
+}
+
+.latest-news {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.article-item {
+  position: relative;
+  flex-direction: column;
+}
+
+.article-item img {
+  width: 100%;
+  max-height: 200px;
+  margin-bottom: 5px;
+}
+
+.latest-news:first-of-type img {
+  max-height: 150px;
+}
+
+.article-item a:hover {
+  color: #f42;
+  text-decoration: dotted;
+}
+
+.article-meta {
+  margin: 10px 0;
+}
+
+.author a:hover {
+  color: white;
+}
+
+.social-media .social-list li i {
+  vertical-align: middle;
+}
+
+.most-popular-articles ul li {
+  position: relative;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+footer .navigation li {
+  margin: 25px 10px;
+}
+
+.social-media .social-list li {
+  margin: 1%;
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  font-size: 13px;
+  padding: 13px;
+  border: 1px solid #333;
+}
+
+.text-overlay .author a,
+.text-overlay .time {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .navigation li a:hover {
+  color: white;
+}
+
+.social-media .social-list li:hover {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #333;
+}
+
+#header-icons i {
+  border-left: 1px solid #eee;
+  padding: 15px;
+}
+
+.most-popular-articles ul li a:hover {
+  color: black;
+}
+
+.text-overlay .author a:hover {
+  color: white;
+}
+
+#top-nav-bar a {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+#funds-links a {
+  color: #f42;
+  font-size: 1.2em;
+}
+
+.gray,
+#main-nav a,
+#header-icons i {
+  color: #aaa;
+}
+
+#top-nav-bar a:hover {
+  color: #fff;
+}
+
+#main-nav a:hover,
+#header-icons i:hover {
+  color: #000;
+}
+
+.most-popular-articles ul {
+  list-style: none;
+  padding: 15px 5px;
+}
+
+#top-nav-bar ul {
+  list-style-type: none;
+  justify-content: center;
+}
+
+#top-nav-bar li {
+  margin-right: 10px;
+}
+
+#main-nav ul li {
+  margin-right: 35px;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+#top-nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+  line-height: 32px;
+  background-color: black;
+}
+
+#main-nav {
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
+  font-size: 1.3em;
+  font-family: "Ropa Sans", sans-serif;
+}
+
+#nav-logo {
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  height: 100%;
+  width: 100px;
+}
+
+.most-popular-articles .latest img {
+  height: 80px;
+  float: right;
+}
+
+.most-popular-articles .latest span {
+  color: #f42;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+#nav-logo img {
+  height: 20px;
+  margin: 30% auto;
+  padding: 0 10px;
+}
+
+#main-nav ul {
+  padding: 5px 0;
+}
+
+#header-icons {
+  justify-content: space-around;
+}
+
+#header-icons .fa-bars,
+#header-icons .fa-bars:hover {
+  color: #f42;
+}
+
+#featured-blocks {
+  margin: 90px 5px 0 0;
+  grid-template-columns: 2fr 1fr;
+  height: 60vh;
+}
+
+#main-block {
+  height: 100%;
+}
+
+.block {
+  background-color: black;
+  margin: 5px 0 5px 5px;
+  position: relative;
+}
+
+.bg-img-1 {
+  background:
+    linear-gradient(
+      318deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(252, 124, 69, 0.7) 100%
+    ),
+    url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/negotiation-hostage-gq-796x417.png)
+      no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img-2 {
+  background:
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 1) 100%),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/Amazon-.jpg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img-3 {
+  background:
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 1) 100%),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/ptl-newsletter-hed-796x417.png")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#nested-featured-blocks > .block {
+  height: 49.5%;
+}
+
+#cover-logo {
+  height: 100px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.heading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 25px 20px;
+}
+
+.heading h1 {
+  font-size: 56px;
+  line-height: 56px;
+  color: white;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+.block .author,
+.block .time,
+.block .shares {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 20px 20px 20px 0;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+}
+
+#nested-featured-blocks h1 {
+  font-size: 28px;
+  line-height: 31px;
+  margin: 10px 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 15px;
+}
+
+.spacing {
+  height: 80px;
+}
+
+#funds-heading {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-container {
+  margin: 15px 0;
+}
+
+#funds-links a:hover {
+  color: black;
+}
+
+#fund-rounds {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin: 15px 0;
+}
+
+#fund-rounds .fund-item img {
+  width: 50px;
+  float: left;
+  margin: 15px;
+}
+
+#fund-rounds .fund-item .fund-heading {
+  background-color: #f42;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+}
+
+#fund-rounds .fund-amount {
+  background-color: rgba(255, 68, 34, 0.08);
+  padding: 10px;
+}
+
+#fund-rounds .fund-amount h4 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+#fund-rounds .fund-amount span {
+  color: #000;
+  opacity: 0.5;
+}
+
+#fund-rounds .fund-list ul {
+  background-color: #fffaf8;
+  list-style-type: none;
+  padding: 15px;
+}
+
+#fund-rounds .fund-list ul li {
+  padding: 5px;
+}
+
+#fund-rounds .fund-link a {
+  color: #555;
+}
+
+#fund-rounds .fund-list li a {
+  color: #555;
+}
+
+#fund-rounds .fund-list li a:hover {
+  color: black;
+}
+
+#fund-rounds .fund-list li i {
+  padding: 0 5px;
+}
+
+#fund-rounds .fund-link {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 15px;
+  font-size: small;
+  font-weight: lighter;
+  background-color: #fffaf8;
+}
+
+.most-popular-articles {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 50px;
+}
+
+.popular-img-heading {
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  height: 250px;
+  background-size: cover;
+  background-position: 50%;
+  background-image:
+    linear-gradient(
+      180deg,
+      transparent,
+      rgba(0, 0, 0, 0.9836309523809523) 100%
+    ),
+    url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-368x276.jpg");
+}
+
+.popular-img-heading .text-overlay {
+  padding: 15px;
+}
+
+.most-popular-articles .latest {
+  padding: 15px;
+  background-color: rgba(255, 68, 34, 0.06);
+}
+
+.most-popular-articles .latest h5 {
+  color: #f42;
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+
+.most-popular-articles ul li a::before {
+  background-color: #f42;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 13px;
+  width: 4px;
+}
+
+.discount-overlay {
+  color: #000;
+  display: block;
+  height: 80px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  z-index: 20;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  background-color: yellow;
+}
+
+.discount-overlay div {
+  transform: rotate(45deg);
+  font-size: 14px;
+  font-weight: 700;
+  left: 8px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 100%;
+}
+
+.social-media {
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: #131313;
+  padding: 25px;
+}
+
+.social-media .social-list {
+  list-style-type: none;
+  justify-content: center;
+  display: flex;
+}
+
+footer .navigation {
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer .copy-rights {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+
+footer .copy-rights p {
+  display: inline-block;
+}
+
+.footer-logo {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+  vertical-align: baseline;
+}
+
+@media screen and (max-width: 1023px) {
+  .hide-on-medium {
+    display: none;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  .heading h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  #nested-featured-blocks h1 {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .latest-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #fund-rounds {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .fund-item:last-of-type {
+    display: none;
+  }
+
+  .most-popular-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .show-on-medium {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  body {
+    font-size: 10px;
+  }
+
+  nav {
+    padding: 0;
+  }
+
+  #main-nav {
+    top: 0;
+    justify-content: flex-end;
+  }
+
+  #featured-blocks {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: 85vh;
+    margin-top: 60px;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+    line-height: 31px;
+  }
+
+  #featured-blocks h1 {
+    /* font-size: 20px !important;
+    line-height: 31px !important; */
+    margin: 10px 0;
+  }
+
+  .latest-news {
+    grid-template-columns: 1fr;
+  }
+
+  .article-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .article-item img {
+    width: 30%;
+  }
+
+  .article-item h3,
+  .article-item .article-meta {
+    padding: 0 10px;
+  }
+
+  .discount-overlay {
+    display: none;
+  }
+
+  #funds-heading {
+    flex-direction: column;
+  }
+
+  #fund-rounds {
+    grid-template-columns: 1fr;
+  }
+
+  .most-popular-articles {
+    grid-template-columns: 1fr;
+  }
+
+  #nav-logo img {
+    margin: 10px;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
